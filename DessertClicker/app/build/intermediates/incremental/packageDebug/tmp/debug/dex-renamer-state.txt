@@ -1,0 +1,4 @@
+#Wed Jan 13 11:48:05 BRT 2021
+base.0=/home/uian/Projects/android-references/DessertClicker/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
