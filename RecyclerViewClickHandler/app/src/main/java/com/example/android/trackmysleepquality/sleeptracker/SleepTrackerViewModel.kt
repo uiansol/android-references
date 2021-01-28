@@ -34,6 +34,10 @@ class SleepTrackerViewModel(
         dataSource: SleepDatabaseDao,
         application: Application) : ViewModel() {
 
+    private val _navigateToSleepDetail = MutableLiveData<Long>()
+    val navigateToSleepDetail
+        get() = _navigateToSleepDetail
+
     /**
      * Hold a reference to SleepDatabase via SleepDatabaseDao.
      */
@@ -204,4 +208,13 @@ class SleepTrackerViewModel(
             _showSnackbarEvent.value = true
         }
     }
+
+    fun onSleepNightClicked(id: Long) {
+        _navigateToSleepDetail.value = id
+    }
+
+    fun onSleepDetailNavigated() {
+        _navigateToSleepDetail.value = null
+    }
+
 }
