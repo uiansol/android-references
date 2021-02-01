@@ -69,6 +69,9 @@ dependencies {
     implementation "androidx.core:core-ktx:$version_core"
 
     // Requests
-    implementation "com.squareup.retrofit2:retrofit:$version_retrofit"
-    implementation "com.squareup.retrofit2:converter-scalars:$version_retrofit"
+    // implementation "com.squareup.retrofit2:retrofit:$version_retrofit"
+    implementation "com.squareup.retrofit2:converter-moshi:$version_retrofit"
+
+    // JSON parser
+    implementation "com.squareup.moshi:moshi-kotlin:$version_moshi"
 }
